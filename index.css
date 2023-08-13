@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(159, 102, 61);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(31, 28, 28);
+    color: white;
+    box-shadow: 0.2rem 0.2rem 0.3rem #22dda7;
+    flex-wrap: wrap;
+    height: 50px;
+
+}
+
+.nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav_item:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(10, 240, 41, 0.55);
+    border-radius: 3px;
+}
+
+.mainhead {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem red;
+    margin-top: 10px;
+}
+
+.cantain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.box {
+    background-color: rgba(180, 25, 50, 0.8);
+    border: 2px solid black;
+    width: 12rem;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgb(34, 17, 24);
+    margin-top: px;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    background-color: brown;
+}
+
+.box_child {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+.box_child:hover {
+    transform: rotate(360deg);
+}
+
+.logo {
+    height: 10rem;
+    border: 1px solid black;
+}
+
+.box li {
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+}
+
+.image img {
+    height: 7rem;
+    border: 2px solid black;
+    border-radius: 10rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+    color: white;
+    height: 4rem;
+}
+
+@media screen and (max-width:550px) {
+    bady {
+        background-color: brown;
+    }
+
+    .navbar {
+        background-color: rgb(212, 33, 33);
+    }
+
+    .nav_item {
+        font-size: 0.7rem;
+    }
+
+    .cantain {
+        padding: 6rem 0.5rem 0 0.5rem;
+    }
+
+    .box {
+        margin: 4px;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    
+}
+
+@media screen and (max-width:300px) {
+    .nav_item {
+        font-size: 0.47rem;
+    }
+
+    .cantain {
+        padding: 4rem 0.5rem 0 0.5rem;
+    }
+
+    .mainhead {
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 40vw;
+    }
+
+    .image img{
+        height: 40vw;
+        
+    }
+
+    .mainhead {
+        font-size: 10vw;
+    }
+
+    .foot {
+        font-size: 7vw;
+    }
+
+    .box li {
+        font-size: 7vw;
+    }
+
+}
